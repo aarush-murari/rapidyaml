@@ -166,8 +166,8 @@ jobs:
             osname: linux
             os:: os
         config:
-        #- ! python('3.13' 313 'x86_64' 'manylinux_x86_64' 'ubuntu-24.04')
-        #- ! python('3.13' 313 'i686'   'manylinux_i686'   'ubuntu-24.04')
+        - ! python('3.13' 313 'x86_64' 'manylinux_x86_64' 'ubuntu-24.04')
+        - ! python('3.13' 313 'i686'   'manylinux_i686'   'ubuntu-24.04')
         - ! python('3.12' 312 'x86_64' 'manylinux_x86_64' 'ubuntu-24.04')
         - ! python('3.12' 312 'i686'   'manylinux_i686'   'ubuntu-24.04')
         - ! python('3.11' 311 'x86_64' 'manylinux_x86_64' 'ubuntu-24.04')

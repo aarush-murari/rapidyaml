@@ -290,6 +290,22 @@ jobs:
       fail-fast: false
       matrix:
         config:
+        - pythonv: '3.13'
+          cibw_pyv: 313
+          cibw_arch: x86_64
+          cibw_platform: manylinux_x86_64
+          name: python/3.13/linux/x86_64
+          sfx: python3.13_linuxx86_64
+          osname: linux
+          os: ubuntu-24.04
+        - pythonv: '3.13'
+          cibw_pyv: 313
+          cibw_arch: i686
+          cibw_platform: manylinux_i686
+          name: python/3.13/linux/i686
+          sfx: python3.13_linuxi686
+          osname: linux
+          os: ubuntu-24.04
         - pythonv: '3.12'
           cibw_pyv: 312
           cibw_arch: x86_64
